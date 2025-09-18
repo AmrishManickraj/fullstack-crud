@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+Fullstack CRUD Application (React + Spring Boot + PostgreSQL)
+📌 Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  This is a Fullstack CRUD (Create, Read, Update, Delete) application built with:
+  
+  Frontend: React (developed in VS Code)
+  
+  Backend: Spring Boot (developed in IntelliJ IDEA)
+  
+  Database: PostgreSQL
+  
+  It demonstrates how to build and connect a modern frontend with a backend API     and a relational database.
 
-## Available Scripts
 
-In the project directory, you can run:
+⚙️ Tech Stack
 
-### `npm start`
+    Frontend: React, JavaScript, HTML, CSS
+    
+    Backend: Spring Boot, Java, Maven
+    
+    Database: PostgreSQL
+    
+    Tools: IntelliJ IDEA, VS Code, GitHub
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✨ Features
 
-### `npm test`
+    Add a new record (Create)
+    
+    View all records (Read)
+    
+    Edit/update a record (Update)
+    
+    Delete a record (Delete)
+    
+    API communication between React and Spring Boot
+    
+    PostgreSQL integration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+🚀 Getting Started
+🔹 Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Make sure you have installed:
+    
+    Node.js
+    
+    PostgreSQL
+    
+    Java JDK 17+
+    
+    Maven
+    
+    Git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔹 Clone the Repository
 
-### `npm run eject`
+git clone https://github.com/AmrishManickraj/fullstack-crud.git
+cd fullstack-crud
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🔹 Backend Setup (Spring Boot)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ 1.Navigate to the backend folder:
+   cd Backend
+   
+ 2.Update application.properties with your PostgreSQL credentials:
+   spring.datasource.url=jdbc:postgresql://localhost:5432/your_db
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
+   spring.jpa.hibernate.ddl-auto=update
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ 3.Run the backend:
+   mvn spring-boot:run
+   The backend will start on http://localhost:8080
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🔹 Frontend Setup (React)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  1.Navigate to the frontend folder (root of project if React files are there):
+    cd ..
+  
+  2.Install dependencies:
+    npm install
 
-### Code Splitting
+  3.Start the React development server:
+    npm start
+    The frontend will run on http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+ 📂 Project Structure
+      react-project/
+      │── Backend/                 # Spring Boot backend
+      │   ├── src/main/java/...    # Java source code
+      │   ├── src/main/resources/  # Application properties
+      │   └── pom.xml              # Maven config
+      │
+      │── src/                     # React frontend source
+      │── public/                  # React public assets
+      │── package.json             # React dependencies
+      │── README.md                # Project documentation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+ 📬 API Endpoints (Spring Boot)
+      | Method | Endpoint              | Description       |
+      | ------ | --------------------- | ----------------- |
+      | GET    | `/api/countries`      | Get all records   |
+      | POST   | `/api/countries`      | Create new record |
+      | PUT    | `/api/countries/{id}` | Update a record   |
+      | DELETE | `/api/countries/{id}` | Delete a record   |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+  🌟 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+      Add authentication (JWT)
+      
+      Dockerize the app
+      
+      Deploy to AWS / Heroku / Render
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  👨‍💻 Author
+     👤 Amrish Manickraj  
+     📧 amrishmanickraj23@gmail.com
