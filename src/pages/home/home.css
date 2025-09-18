@@ -1,0 +1,134 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+body
+{
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.form input {
+  
+  min-width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.input1,.input2,.input3
+{
+  flex: 1;
+  padding: 10px;
+}
+
+.button
+{
+  margin-right: 70px;
+  margin-top: 10px ;
+  margin-bottom: 10px;
+}
+
+.btn.add,.clear {
+  flex: 1;
+  padding: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn.add {
+  background: #28a745;
+  color: white;
+}
+
+.btn.add:hover {
+  background: #218838;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      transform: translateY(-2px);
+}
+
+.btn.clear {
+  background: orange;
+  color: white;
+  margin-left: 15px;
+}
+
+.btn.clear:hover {
+  background: orangered;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      transform: translateY(-2px);
+}
+
+.btn.edit {
+  background-color: white;
+  color: blue;
+  margin-right: 6px;
+  border: none
+}
+
+.btn.edit:hover {
+  color: black;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn.delete {
+  background-color: white;
+  color: rgb(141, 0, 0);
+  border: none;
+}
+
+.btn.delete:hover {
+  color: black;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+
+/* Table Styling */
+.datagrid {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.datagrid th, .datagrid td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.datagrid th {
+  background: #343a40;
+  color: white;
+}
+
+.datagrid tr:hover {
+  background: #f1f1f1;
+}
